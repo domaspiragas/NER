@@ -8,5 +8,4 @@ Java
 
 This is a project I completed for a Natural Language Processing class at the University of Utah Fall of 2017
 
-I believe the code base in this project is a good representation of clean coding practices while meeting requirements
-for a project on a short deadline.
+I believe the code base in this project is a good representation of clean coding practices while meeting requirements for a project on a short deadline.
