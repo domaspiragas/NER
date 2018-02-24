@@ -398,20 +398,20 @@ public class ner {
         }
     }
     private static void createReadableFiles(){
-        try(PrintWriter out = new PrintWriter("train.txt.readable")){
+        try(PrintWriter out = new PrintWriter("resources/train.txt.readable")){
             for(Features  f: trainingReadable){
                 out.println(f.toString());
             }
         }catch (Exception e){}
 
-        try(PrintWriter out = new PrintWriter("test.txt.readable")){
+        try(PrintWriter out = new PrintWriter("resources/test.txt.readable")){
             for(Features  f: testReadable){
                 out.println(f.toString());
             }
         }catch (Exception e){}
     }
     private static void createVectorFiles(){
-        try(PrintWriter out = new PrintWriter("train.txt.vector")){
+        try(PrintWriter out = new PrintWriter("resources/train.txt.vector")){
             for(Features  f: trainingReadable){
                 out.println(generateVectorString(f));
             }
@@ -419,7 +419,7 @@ public class ner {
             System.out.println("Error generating training vector file");
         }
 
-        try(PrintWriter out = new PrintWriter("test.txt.vector")){
+        try(PrintWriter out = new PrintWriter("resources/test.txt.vector")){
             for(Features  f: testReadable){
                 out.println(generateVectorString(f));
             }
