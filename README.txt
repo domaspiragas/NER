@@ -1,6 +1,6 @@
 Domas Piragas
 Java
-1. To compile the code run at the root of this project folder:
+1. To compile the code run at the src folder of this project:
     -javac ner.java
     -java ner train.txt test.txt locs.txt WORD POSCON POS WORDCON ABBR CAP LOCATION
     (Or whatever combination of Feature Types desired (Always include WORD as the first type))
